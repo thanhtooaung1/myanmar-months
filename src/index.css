@@ -7,7 +7,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.header-image{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image:  url('./img/bagan.jpg');
 }
+
+.opacity-bg {
+  position: absolute;
+  opacity: 0.2;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+
+
