@@ -12,7 +12,7 @@ const MonthDetail = () => {
   return (
     <div className="container py-2">
       {error && <div>{error}</div>}
-      {isPending && <Loading />}
+      {isPending && <Loading styleName="detail-loading" />}
       {month && (
         <div className="month-detail">
           <div className="row">

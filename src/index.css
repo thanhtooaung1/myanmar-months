@@ -1,12 +1,3 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 .navbar-font {
   text-align: center;
   font-family: "Pacifico", cursive;
@@ -36,19 +27,9 @@ body {
   position: relative;
   height: 100vh;
   width: 100%;
-  
-  /* background-repeat: no-repeat;
-  background-size: cover;
-  background-image:  url('./img/bagan.jpg'); */
+
 }
 
-.opacity-bg {
-  position: absolute;
-  opacity: 0.2;
-  height: 100vh;
-  width: 100%;
-  background-color: black;
-}
 
 .header {
   height: 80vh;
@@ -145,6 +126,13 @@ body {
 
 .loading {
   height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail-loading {
+  height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -3,12 +3,7 @@ import { Link } from "react-router-dom";
 
 const MonthCard = ({ month }) => {
   return (
-    <div
-      key={month.id}
-      className="px-2"
-      data-aos="zoom-in"
-      data-aos-duration="1300"
-    >
+    <div className="px-2" data-aos="zoom-in" data-aos-duration="1300">
       <Link to={`/months/${month.id}`}>
         <div className="month-card">
           <div>
