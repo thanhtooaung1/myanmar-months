@@ -3,6 +3,8 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import useFetch from "../useFetch";
 import { API_URL } from "../constants";
+import MonthCard from "./MonthCard";
+import Loading from "./Loading";
 
 const responsive = {
   desktop: {
@@ -27,7 +29,15 @@ const MonthList = () => {
 
   return (
     <div className="container py-5">
-      <h3 className="mb-3">Months</h3>
+      <h3
+        className="mb-4 fs-5 fw-bold text-secondary"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        မြန်မာလများ
+      </h3>
+      {error && <div>{error}</div>}
+      {isPending && <Loading />}
       {months && (
         <Carousel
           draggable={false}
@@ -41,13 +51,7 @@ const MonthList = () => {
           dotListClass="custom-dot-list-style"
         >
           {months.map((month) => (
-            <div className="px-2">
-              <img
-                src={require(`../img/${month.id}.jpg`)}
-                alt=""
-                style={{ width: "100%", height: "200px" }}
-              />
-            </div>
+            <MonthCard month={month} key={month.id} />
           ))}
         </Carousel>
       )}
